@@ -1,7 +1,14 @@
 # gecko-dev
 mirror of gecko-dev, minus the commit logs
 
-### how to use
+### how to build
+- ./mach build
+  - should take 15ish minutes first time around, much less time thereafter
+- cd into the obj-blah-foo directory
+- (on mac) `./dist/Nightly.app/Contents/MacOS/firefox.bin`
+  - if you already have a copy of FF running, add `-P "profileName" -no-remote` to open it with some other profile
+
+### how to make changes
 - create your feature branch, make changes, push to this repo (super-friends copy)
 - open PRs against master, land in master
 
